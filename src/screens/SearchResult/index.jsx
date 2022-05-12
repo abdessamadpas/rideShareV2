@@ -10,13 +10,13 @@ const SearchResult = () => {
       <View style={{height: Dimensions.get('window').height -280 }}>
         <RouterMap/>
       </View>
-      
       <View style={{height:280}}>
       <UberTypes/>
-      </View>
-      
+      </View>      
     </View>
   )
 }
+
+
 
 export default SearchResult
