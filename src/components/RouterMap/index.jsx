@@ -27,8 +27,7 @@ const RouterMap = () => {
         longitudeDelta: 0.0421,
       }} 
       >
-    
-    
+      
       <MapViewDirections
       origin={origin}
       destination={destination}

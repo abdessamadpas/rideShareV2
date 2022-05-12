@@ -8,9 +8,9 @@ import SearchResult from './src/screens/SearchResult';
 export default function App() {
   return (
     <View >
-      
-      <StatusBar style="auto" />
-      <SearchResult />
+    <StatusBar style="auto" />
+    <DestinationSearch />
     </View>
   );
 }
+

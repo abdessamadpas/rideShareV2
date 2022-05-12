@@ -27,7 +27,7 @@ const DestinationSearch = () => {
           onPress={(data, details = null) => {
             // 'details' is provided when fetchDetails = true
             setDestinationPlace({data, details})
-            console.log(data, details);
+            console.log(details.geometry.location);
           }}
          
           fetchDetails={true}
