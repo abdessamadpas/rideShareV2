@@ -5,6 +5,12 @@ import React from 'react'
 import styles from './styles'
 
 const RouterMap = () => {
+
+
+  //! need  to get data from the DestinationSearsh  
+  //* make the Origin and Detination dynamic by replace there values with the data fetched
+
+
     const GOOGLE_MAPS_APIKEY ='AIzaSyBuIe8cxae1ftYK6QNd22xTPV-1MWfWSH4'
     const origin={
         latitude: 28.450627,
@@ -14,13 +20,13 @@ const RouterMap = () => {
     const destination={
       latitude: 28.454812,
       longitude: -16.258658,
-  }
+    }
   
   return (
     <View style={styles.containerMap}>
     <MapView  style={styles.map}
-      provider={PROVIDER_GOOGLE}
-      initialRegion={{
+          provider={PROVIDER_GOOGLE}
+          initialRegion={{
         latitude: 28.450627,
         longitude: -16.263045,
         latitudeDelta: 0.0922,
@@ -32,7 +38,7 @@ const RouterMap = () => {
       origin={origin}
       destination={destination}
       apikey={GOOGLE_MAPS_APIKEY}
-      strokeColor='yellow'
+      strokeColor='pink'
       strokeWidth={5}
       optimizeWaypoints={true}
 

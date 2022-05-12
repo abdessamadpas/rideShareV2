@@ -15,7 +15,7 @@ export default [
   },
   {
     id: '2',
-    type: 'lghali',
+    type: 'lghla',
     latitude: 28.456208,
     longitude: -16.259098,
     heading: 250,

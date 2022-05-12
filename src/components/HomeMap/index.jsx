@@ -9,7 +9,7 @@ const HomeMap = () => {
     if(type === 'Comfort'){
       return require('../../assets/images/top-Comfort.png')
     } 
-    if(type === 'UberXL'){
+    if(type === 'lghla'){
       return require('../../assets/images/top-UberXL.png')
     }
     return require('../../assets/images/top-UberX.png')
