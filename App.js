@@ -4,13 +4,17 @@ import { StyleSheet, Text, View } from 'react-native';
 import HomeScreen from './src/screens/HomeScreen/index'
 import DestinationSearch from './src/screens/DestinationSearch';
 import SearchResult from './src/screens/SearchResult';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function App() {
   return (
-    <View >
+    <SafeAreaView>
+      <View >
     <StatusBar style="auto" />
-    <SearchResult />
+    <DestinationSearch />
     </View>
+    </SafeAreaView>
+    
   );
 }
 
