@@ -35,6 +35,7 @@ const DestinationSearch = () => {
           //    console.log(data);
             }}
             suppressDefaultStyles
+            enablePoweredByContainer={false}
             styles={{
               textInput:styles.textInput,
               container: {
@@ -47,7 +48,13 @@ const DestinationSearch = () => {
               },
               listView: {
                 position:'absolute',
-                top:100,
+                top:120,
+              },
+              separator:{
+                backgroundColor:'#b4b4b4',
+                height:1,
+                marginHorizontal : 50,
+                marginVertical: 5
               },
               row: {
                 backgroundColor: '#FFFFFF',
@@ -66,20 +73,40 @@ const DestinationSearch = () => {
         />  
 
         <GooglePlacesAutocomplete
-        placeholder='From'
+        placeholder='Where To'
         onPress={(data, details = null) => {
           // 'details' is provided when fetchDetails = true
           setFromOriginal(details.geometry.location)
           console.log(details.geometry.location);
         }}
-
+        suppressDefaultStyles
+        enablePoweredByContainer={false}
         styles={{
           textInput:styles.textInput,
           container: {
+            position : 'absolute' ,
+            top : 80,
+            left: 10,
+            right: 10,
             
-            top : 55,
-           
-          }
+            
+          },
+          listView: {
+            position:'absolute',
+            top:50,
+          },
+          separator:{
+            backgroundColor:'grey',
+            height:1,
+            marginHorizontal : 50,
+            marginVertical: 5
+          },
+          row: {
+            backgroundColor: '#FFFFFF',
+            padding: 5,
+            height: 50,
+            flexDirection: 'row',
+          },
         }}
         fetchDetails={true}
       
@@ -87,9 +114,12 @@ const DestinationSearch = () => {
           key: 'AIzaSyBuIe8cxae1ftYK6QNd22xTPV-1MWfWSH4',
           language: 'en',
         }}
+        renderRow={(data)=><PlaceRow data={data}/ >}
       />  
-        
-        
+          
+      <View  style={styles.cercle}/>
+      <View style={styles.line}/>
+      <View style={styles.square}/>
       </View>
     </SafeAreaView>
   )

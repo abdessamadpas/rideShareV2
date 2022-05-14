@@ -8,7 +8,7 @@ const PlaceRow = ({data}) => {
   return (
     <View style={styles.row}>
       <View style={styles.iconContainer}>
-        <EvilIcons  name='location' size={20} color ={"yellow"}/> 
+        <EvilIcons  name='location' size={20} color ={"#ff8800"}/> 
       </View>
       <Text style={styles.locationContainer}> {data.description}</Text>
     </View>
