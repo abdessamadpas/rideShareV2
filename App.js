@@ -10,8 +10,8 @@ export default function App() {
   return (
     <SafeAreaView>
       <View >
-    <StatusBar style="auto" />
-    <DestinationSearch />
+      <StatusBar style="auto" />
+      <HomeScreen />
     </View>
     </SafeAreaView>
     

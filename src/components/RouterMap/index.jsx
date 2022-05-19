@@ -1,5 +1,5 @@
 import { View ,Image} from 'react-native'
-import MapView, { PROVIDER_GOOGLE , Marker} from 'react-native-maps';
+import MapView, { PROVIDER_GOOGLE , Marker, Circle} from 'react-native-maps';
 import MapViewDirections from 'react-native-maps-directions';
 import React from 'react'
 import styles from './styles'
@@ -47,6 +47,8 @@ const RouterMap = () => {
          <Marker
           
           coordinate={origin}
+          title='where u want to start'
+          description='test'
          
         
         >
@@ -59,8 +61,16 @@ const RouterMap = () => {
         </Marker>
         <Marker
          coordinate={destination}
+         title='where u want to go'
+          description='test'
+        draggable={true}
       
         >
+        <Circle
+          center={{
+            latitude: 28.450627,  longitude: -16.263045}}
+          radius={100}
+        />
         <Image style={{width:100,
           height:100,
           resizeMode: 'contain',
