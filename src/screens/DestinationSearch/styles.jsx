@@ -8,10 +8,10 @@ import { StyleSheet } from "react-native";
 
         },
      textInput: {
-        padding:10,
-        backgroundColor: '#eee',
-        marginVertical:5,
-        marginLeft:20
+         padding:10,
+         backgroundColor: '#eee',
+         marginVertical:5,
+         marginLeft:20
      },
      row: {
         

@@ -11,7 +11,7 @@ export default function App() {
     <SafeAreaView>
       <View >
       <StatusBar style="auto" />
-      <HomeScreen />
+      <DestinationSearch />
     </View>
     </SafeAreaView>
     

@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, Dimensions } from 'react-native'
+import { View, Text, StyleSheet, Dimensions,ScrollView } from 'react-native'
 import React from 'react'
 import HomeMap from '../../components/HomeMap'
 import CovidMessage from '../../components/CovidMessage'
@@ -12,9 +12,12 @@ const HomeScreen = () => {
         </View>
     <View style={{height: 318}}>
        {/** covid message */}
-       <CovidMessage/>
+        <ScrollView>
+        <CovidMessage/>
        {/* bottom component*/}
        <HoemSearch/>
+        </ScrollView>
+       
     </View>
        
     

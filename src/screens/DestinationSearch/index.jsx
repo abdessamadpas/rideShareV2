@@ -17,7 +17,7 @@ const DestinationSearch = () => {
      useEffect(() => {
       console.warn('not yet')
        if (fromOriginal && destinationPlace ) {
-        //  console.warn(fromOriginal, destinationPlace)
+            console.warn(fromOriginal, destinationPlace)
         //  console.log(fromOriginal, destinationPlace)
        }
       
